@@ -295,3 +295,20 @@ footer p {
     }
 
 }
+/* Jab mobile screen ho (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Pehle links ko chhupa do */
+    }
+    
+    /* Jab hum chahein ke links dikhein (e.g. click par) 
+       Ya phir simple hack: links ko stack kar do */
+    .navbar {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0; /* Links ke beech thora gap */
+    }
+}
