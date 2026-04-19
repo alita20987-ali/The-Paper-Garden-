@@ -1,0 +1,297 @@
+/*--- Google Font import - sundar font ke liye ---*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+/*---Sari website ki basic styling ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5f7;
+    color: #191717;
+}
+/*---  NAVBAR --- */
+.navbar {
+    background-color: #ff85a1;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white !important;
+    text-decoration: none!important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: purple !important;;
+    text-decoration: underline!important;
+}
+/*---  HERO ---*/
+.hero {
+    background-color: #ffd6e0;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #880e4f;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff85a1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* --- SECTIONS GENERAL --- */
+section {
+    padding: 60px 40px;
+    text-align:center;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    color: #343333;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+/* This turns the links into pretty pink buttons */
+.btn-buy, .btn-tutorial {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #da79a9; 
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border: none;
+    margin-top: 10px;
+}
+
+/* This makes them change color when you hover over them */
+.btn-buy:hover, .btn-tutorial:hover {
+    background-color: #b02a6b;
+    transform: scale(1.05); /* Makes it slightly bigger */
+}
+
+/* Centers everything inside your cards */
+.card {
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Adds that soft shadow from your screenshot */
+    border-radius: 15px;
+    padding: 20px;
+}
+/* FORM */
+.customize form , .order-form form{
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(234, 74, 111, 0.3);
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 2px solid #ffd6e0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline:none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff85a1;
+}
+
+button[type="submit"] {
+    background-color: #ff85a1;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+#cart-btn {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#cart-count {
+    background-color: white;
+    color: #d63384;
+    padding: 0px 6px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* -- CARDS --*/
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(255, 133, 161, 0.3);
+    text-align: center;
+    
+}
+/* CARD IMAGE*/
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card h3 {
+    color: #c2185b;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.card img{
+    size: 10px;
+
+}
+
+.card p {
+    color: #2d2c2c;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #ca8092;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 100%; /* Forces all cards in the row to be equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps the title at top and button at bottom */
+}
+/* ---FOOTER ---*/
+footer {
+    background-color: #ff85a1;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: white !important;
+    text-align: center;  
+}
+/*  RESPONSIVE — MOBILE */
+@media (max-width: 768px) {
+
+    /* Navbar — upar neeche ho jaye */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Hero text chota ho jaye */
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    /* Cards neeche neeche ho jayein */
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* Form full width */
+    .customize form, .order-form form {
+        padding: 20px;
+    }
+
+}
