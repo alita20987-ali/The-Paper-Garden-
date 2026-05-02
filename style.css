@@ -98,7 +98,7 @@ section p {
 .btn-buy, .btn-tutorial {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #da79a9; 
+    background-color: #b64d81; 
     color: white !important;
     text-decoration: none !important;
     border-radius: 50px;
@@ -311,4 +311,37 @@ footer p {
     .nav-item {
         margin: 5px 0; /* Links ke beech thora gap */
     }
+}
+/* Button styling - consistent size */
+.btn-buy {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;           /* Full width of container */
+    max-width: 280px;      /* Maximum width */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+    background-color: #b52a6f;
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    border: none;
+    
+}
+
+/* HR styling */
+hr {
+    margin: 20px 0;
 }

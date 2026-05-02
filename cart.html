@@ -6,22 +6,46 @@
     <title>Your Cart - Paper Garden</title>
 </head>
 <body>
+
+<nav class="navbar">
+        <h2 class="logo">The Paper Garden</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="tutorials.html">tutorials</a></li>
+            <li><a href="purchase .html">purchase</a></li>
+            <li><a href="customize.html">customize</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li class="nav-item">
+    <a class="nav-link" href="cart.html" id="cart-btn">
+    🛒 Cart (<span id="cart-count">0</span>)
+</a>
+</li>
+        </ul>
+    </nav>
+
+
     <div class="container mt-5">
-        <h2 class="text-center mb-4" style="color: #d63384;">🛒 Your Shopping Cart</h2>
-        <div class="card p-4 shadow-sm">
-            <div id="cart-items-list">
-                </div>
-            <hr>
-            <div class="d-flex justify-content-between align-items-center">
-                <h4>Total: RS <span id="cart-total-price">0</span></h4>
-                <div>
-                    
-                    <a href="form.html" class="btn-buy">Proceed to Checkout</a>
-                    <button class="btn-buy" onclick="clearFullCart()">Empty Cart 🗑️</button>
-                </div>
-            </div>
+    <h2 class="text-center mb-4" style="color: #d63384;">🛒 Your Shopping Cart</h2>
+    
+    <div class="card p-4 shadow-sm text-center">  <!-- text-center add kiya -->
+        
+        <!-- Cart Items List -->
+        <div id="cart-items-list"></div>
+        
+        <hr>
+        
+        <!-- Total Row (Alag line mein) -->
+        <h4 class="mb-3">Total: RS <span id="cart-total-price">0</span></h4>
+        
+        <!-- Buttons Column (Ek ke neeche ek) -->
+        <div class="d-flex flex-column align-items-center gap-2">
+            <a href="form.html" class="btn-buy">Proceed to Checkout</a>
+            <button class="btn-buy" onclick="clearFullCart()">Empty Cart 🗑️</button>
         </div>
+        
     </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
